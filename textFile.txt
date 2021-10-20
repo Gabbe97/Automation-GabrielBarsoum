@@ -1,9 +1,4 @@
-this is my textile
+Publc class JavaCode{
 
-Ändring
-
-Third line 
-
- Fourth line
-
-Fifth line
+MyMethos()
+}
