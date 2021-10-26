@@ -1,4 +1,0 @@
-Publc class JavaCode{
-
-MyMethos()
-}
