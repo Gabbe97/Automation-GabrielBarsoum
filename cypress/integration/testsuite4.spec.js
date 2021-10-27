@@ -1,0 +1,28 @@
+/// <reference types="cypress" />
+describe("fourth test suite", function(){
+    it("Creates a new Reservation", function(){
+
+        cy.visit("http://localhost:3000/login")
+        .get(':nth-child(1) > input').type("tester01")
+        .get(':nth-child(2) > input').type("GteteqbQQgSr88SwNExUQv2ydb7xuf8c")
+        .get('.btn').click()
+        cy.contains("Welcome tester01!")
+        .get('.blocks > :nth-child(4) > .btn').click()
+        cy.contains("Reservations")
+        .get('h2 > .btn').click()
+        cy.contains("New Reservation")
+        .get(':nth-child(1) > input').type("Eigth August Twothousandtwentyone")
+        .get(':nth-child(2) > input').type("Tenth August Twothousandtwentyone")
+        .get(':nth-child(3) > select').select("3")
+        .get(':nth-child(4) > select').select("3")
+        .get(':nth-child(5) > select').select("2")
+        .get(':nth-child(1) > input').clear()
+        .get(':nth-child(1) > input').type("2021-11-30")
+        .get(':nth-child(2) > input').clear()
+        .get(':nth-child(2) > input').type("2021-12-27")
+        .get(".blue").click()
+        cy.contains("Fake Name")
+        .get(':nth-child(3) > .btn').click()
+        cy.contains("Tester Hotel Overview")
+    })
+})
