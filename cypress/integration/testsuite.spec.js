@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+import * as indexFuncs from "../pages/indexPage"
 describe("first test suite", function(){
     it("Creates a new Clients", function(){
 
