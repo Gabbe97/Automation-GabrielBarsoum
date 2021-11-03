@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-03T17:50:44.797Z",
+    "end": "2021-11-03T17:50:48.083Z",
+    "duration": 3286,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7373ddac-7e1d-43e5-b7cf-2099b4c9ef95",
+      "title": "",
+      "fullFile": "cypress/integration/testsuite5.spec.js",
+      "file": "cypress/integration/testsuite5.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9338a143-aab8-4bb2-8a92-eb9a379dcdf4",
+          "title": "Fith test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Checks login and logout option",
+              "fullTitle": "Fith test suite Checks login and logout option",
+              "timedOut": null,
+              "duration": 2032,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:3000/login\").get(':nth-child(1) > input').type(\"tester01\").get(':nth-child(2) > input').type(\"GteteqbQQgSr88SwNExUQv2ydb7xuf8c\").get('.btn').click();\ncy.contains(\"Welcome tester01!\").get(\".user > .btn\").click();\ncy.contains(\"Login\");",
+              "err": {},
+              "uuid": "567376fc-8804-453e-9b93-65d7007f1d27",
+              "parentUUID": "9338a143-aab8-4bb2-8a92-eb9a379dcdf4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "567376fc-8804-453e-9b93-65d7007f1d27"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2032,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}

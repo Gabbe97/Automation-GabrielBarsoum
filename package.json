@@ -4,9 +4,13 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "cypress": "^8.7.0"
+    "cypress": "^8.7.0",
+    "mocha": "^9.1.3",
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0"
   },
   "scripts": {
+    "cypress:run": "cypress run --reporter mochawesome",
     "cypress:open": "cypress open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

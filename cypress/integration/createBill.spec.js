@@ -4,6 +4,7 @@ import * as dashboardFuncs from '../pages/dashboardPage'
 import * as roomFuncs from '../pages/roomsPage'
 import * as clientFuncs from '../pages/clientsPage'
 import * as billFuncs from '../pages/billsPage'
+import * as targets from '../targets/targets'
 
 
 
@@ -12,16 +13,13 @@ describe ("Create a new Bill", function(){
     beforeEach (() =>{
         cy.visit("http://localhost:3000/login")
         indexFuncs.checkTitleOfIndexPage(cy) 
-        indexFuncs.performLogin(cy, "tester01", "GteteqbQQgSr88SwNExUQv2ydb7xuf8c", "Welcome tester01!")
+        indexFuncs.performLogin(cy, targets.username, targets.password, targets.welcomeMessage)
         dashboardFuncs.openBills(cy, "Bills")
     })
 
     it (" creates a new Bill", function(){
         billFuncs.createBill(cy, '10000', '10000')
-    })
-    
-    it ("perfroms logut", function(){
         dashboardFuncs.performLogout(cy,'Login')
-        })
+    })
 
 })
